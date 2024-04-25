@@ -1,0 +1,107 @@
+Why do we test:
+	- Judgement about quality or acceptability, to discover problems
+	- Humans are fallible
+
+Purpose of testing:
+	- Quality Assessment
+	- Problem Discovery
+
+Significance in Software:
+	- Software and software-controller systems are prone to errors and vulnerabilities: complexity
+	- Testing serves as a critical process to identify and rectify these errors: reliability and functionality
+
+International Software Testing Qualification Board (ISTQB) and IEEE-CS provides definitions:
+
+Error:
+	- Errors are human actions that result in deviation from intended behavior or specification.
+	- Ex: A programmer mistakenly wqrites incorrect code that causes the software to crash when certain inputs are provided.
+	- Synonym: Mistake
+
+Bug:
+	- Bugs are errors; resulting from human mistakes during programming.
+	- Errors in coding are often referred to as bugs, reflecting the unintentional deviation from desired functionality.
+
+Fault:
+	- It is the manifestation or expression of an error, conveyed through various modes of expression such as narrative text, diagrams, charts and source code.
+	- Ex: A fault may be evident in the source code as a logical error that causes the program to produce incorrect outputs.
+	- Elusiveness of Faults: Faults can be elusive, making them challenging to detect and resolve.
+	- Ex: A subtle error in the code logic may only manifest under specific conditions or input scenarios, making them difficult to identify during testing.
+	
+	Faults of Commission: 
+	- Occur when incorrect information is entered into the representation.
+	- Ex: A programmer mistakenly assigns the wrong variable value in source code.
+
+	Faults of Omission:
+	- Occur when correct information is missing from the representation.
+	- Ex: Failure to include a necessary condition or requirement in the software design documentation.
+
+	Difficulty of Detecting and Resolving Faults of Omission:
+	- Faults of omission are more challenging to detect and resolve compared to faults of commission.
+	- Ex: Identifying missing requirements or specifications in the early stages of development requires thorough analysis and collaboration among stakeholders
+
+Failure:
+	- A failure occurs when the code associated with a fault executes, resulting in observable deviations from the expected behavior.
+	- Ex: When a user inputs certain data into the software, and the program crashes or produces incorrect output due to a fault in the code, a failure occurs
+
+	Subtleties of Failure:
+	- Failures are observed in executable representations
+	- Failures are directly linked to faults of commission, where incorrect information is present.
+
+Addressing Faults of Omission:
+	- Reviews play a crucial role in preventing failures by identifying faults, including those of omission.
+
+Review Process:
+	- Reviews involve thorough examination and analysis of software artifacts, such as requirements documents, design specifications, and source code.
+
+Incident:
+	- An incident is the symptom or observable manifestation associated with a failure that alerts the user, customer, or tester to the occurrence of the failure.
+	- Ex: an incident could be a system crash, an error message, or unexpected behavior that indicates a failure.
+	- Importance: Incidents serve as indicators of potential issues within the software, prompting further investigation and resolution.
+
+Test:
+	- A test is the process of exercising software, by executing predefined test cases.
+
+	Purpose:
+	- Finding failures: Identifying errors, faults, or defects
+	- Demonstrating correct execution: Verifying that the software behaves as expected under specified conditions, indicating that it meets the desired requirements and specifications.
+
+Test Case:
+	- A test case is a structured set of inputs, execution conditions, and expected outcomes designed to test a specific program behavior or functionality.
+	
+	Components:
+	- Identity: Each test case is uniquely identified to facilitate tracking and management.
+	- Associated Program Behavior: linked to specific program behaviors or functionalities that they aim to verify.
+	- Inputs and Expected Outputs: include a set of inputs or stimuli and the corresponding expected outputs or responses.
+
+	Importance of Test Cases:
+	- Central Position in Testing: Test cases play a crucial role in the testing process; primary means to verify the correctness and reliability of software.
+
+	Testing Process Steps:
+	- Test Planning: defining objectives, selecting appropriate test cases, and outlining testing strategies.
+	- Test Case Development: creating structured test cases based on requirements and specifications.
+	- Running Test Cases: executing the test cases against the software under test to evaluate.
+	- Evaluating Test Results: analyzing the outcomes, to assess software quality and identify defects.
+
+Life Cycle Model for Testing:
+	<img src=assets/Unit1/LifeCycleModel4Testing.png" alt="Life Cycle Model for Testing" />
+
+	- Opportunities for Error: The development phases present opportunities for errors to occur, resulting in faults that may propagate through subsequent stages.
+	- Fault Resolution: The process of resolving faults introduces additional opportunities for errors to occur, potentially leading to new defects
+
+Test Case Essentials:
+
+	Components of a Complete Test Case:
+	- Test Case Identifier
+	- Brief Statement of Purpose
+	- Description of Preconditions
+	- Actual Test Case Inputs
+	- Expected Outputs
+	- Description of Expected Postconditions
+	- Execution History (test management)
+
+	Importance of Output:
+	- Output portion of a test case is often overlooked but is crucial, especially in complex scenarios.
+	- Ex:  In testing software for determining optimal aircraft routes, defining the expected optimal route is challenging.
+
+Venn Diagram:
+	
